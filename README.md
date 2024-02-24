@@ -8,6 +8,10 @@ This project aims to create a Health App.
 - Email: vanthieunguyen234@gmail.com
 - GitHub: [vanthieu97](https://github.com/vanthieu97)
 
+## Live Preview
+
+Check out the live preview [here](https://healthy-app-gamma.vercel.app/).
+
 ## Description
 
 Health App is a single web application focused on health.

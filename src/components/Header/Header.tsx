@@ -128,6 +128,8 @@ const HeaderMenu = styled.ul<HeaderMenuProps>((props) => ({
   transition: 'transform 0.3s',
 }))
 const HeaderMenuItem = styled.li({
+  width: '100%',
+  boxSizing: 'border-box',
   padding: '22px 32px',
   color: '#fff',
   fontSize: 18,
@@ -235,9 +237,9 @@ const Header = () => {
                   <HeaderMenuItem>体重グラフ</HeaderMenuItem>
                   <HeaderMenuItem>目標</HeaderMenuItem>
                   <HeaderMenuItem>選択中のコース</HeaderMenuItem>
-                  <HeaderMenuItem>
-                    <Link to='column'>コラム一覧</Link>
-                  </HeaderMenuItem>
+                  <Link to='column'>
+                    <HeaderMenuItem>コラム一覧</HeaderMenuItem>
+                  </Link>
                   <HeaderMenuItem>設定</HeaderMenuItem>
                 </HeaderMenu>
                 <CloseIcon

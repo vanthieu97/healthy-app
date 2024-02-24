@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Hiragino Kaku Gothic Pro';
+  src:
+    local('Trickster'),
+    url('fonts/Hiragino-Kaku-Gothic-Pro.woff2') format('woff2'),
+    url('fonts/Hiragino-Kaku-Gothic-Pro.woff') format('woff'),
+    url('fonts/Hiragino-Kaku-Gothic-Pro.otf') format('opentype');
+}

@@ -21,7 +21,7 @@ const DiaryWrap = styled.ul({
   },
 })
 const DiaryItem = styled.li({
-  flex: 'calc(25% - 9px)',
+  width: 'calc(25% - 9px)',
   padding: '16px 16px 28px',
   border: 'solid 1px #707070',
   aspectRatio: '1/1',
@@ -31,10 +31,10 @@ const DiaryItem = styled.li({
     backgroundColor: '#F5F5F5',
   },
   '@media (max-width: 768px)': {
-    flex: 'calc(33.3333% - 8px)',
+    width: 'calc(33.3333% - 8px)',
   },
   '@media (max-width: 576px)': {
-    flex: 'calc(50% - 6px)',
+    width: 'calc(50% - 6px)',
     padding: 8,
   },
 })

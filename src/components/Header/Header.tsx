@@ -186,7 +186,9 @@ const Header = () => {
   }
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside)
+    if (showMenu) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
@@ -223,7 +225,11 @@ const Header = () => {
             </MenuItem>
             <MenuItem>
               <Icon src={iconMenu} alt='icon-menu' onClick={onClickShowMenu} />
-              <HeaderMenuWrapper ref={menuRef} showMenu={showMenu}>
+              <HeaderMenuWrapper
+                ref={menuRef}
+                showMenu={showMenu}
+                onClick={onClickShowMenu}
+              >
                 <HeaderMenu showMenu={showMenu}>
                   <HeaderMenuItem>自分の記録</HeaderMenuItem>
                   <HeaderMenuItem>体重グラフ</HeaderMenuItem>
